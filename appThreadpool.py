@@ -84,14 +84,12 @@ def downloadData(start,end,year):
     if start <= 12 and end <=12:
         if end > start:
             for i in range(start,end+1):
-
                 end_date=str(year)+"-"+str(i).zfill(2)+"-"+str(monthSetting(i)).zfill(2)
                 temp_date.append(end_date)
-            #change threadpool number (2)
+            #change threadpool with (2) thread
             results = ThreadPool(2).imap_unordered(requestdData, temp_date)
             for r in results:
                 print("download data...")
-            
         else:
             print("end month must bigger then start month")
     else:
