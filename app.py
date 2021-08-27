@@ -9,7 +9,7 @@ from multiprocessing.pool import ThreadPool
 lat="0.783609"
 lon="103.770675"
 #api key & host for meteostap Api.. this acc free subcription
-key="7a180b2290msh9eab950c4de629dp14cfe2jsn7b7f4211b274"
+key="xxxxxxxxxxx"
 host="meteostat.p.rapidapi.com"
 
 start = time.time()
